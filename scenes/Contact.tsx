@@ -1,6 +1,10 @@
 import Button from "@/components/Button";
+import  { useRouter } from "next/navigation"
+
 
 const Contact = () => {
+    const router = useRouter();
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 max-w-6xl text-center">
@@ -12,7 +16,8 @@ const Contact = () => {
           I'm currently looking for new opportunities. Whether you have a question 
           or just want to say hi, I'll try my best to get back to you!
         </p>
-        <Button variant="outline" className="border-black text-black hover:bg-black hover:text-white">
+        <Button
+            onClick={ ()=>router.push("/contact") } variant="outline" className="border-black text-black hover:bg-black hover:text-white">
           Say Hello →
         </Button>
       </div>

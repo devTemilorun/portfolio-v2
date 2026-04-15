@@ -3,13 +3,14 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Home, FolderGit2, Code2, Mail } from 'lucide-react';
+import { Home, FolderGit2, Code2, Mail, User } from 'lucide-react';
 import { usePathname } from 'next/navigation'
 import { assets } from '@/assets/asset';
 
 
 const navItems = [
   { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
   { label: 'Projects', href: '/#projects' },
   { label: 'Tech Stack', href: '/#tech' },
   { label: 'Contact', href: '/contact' },
@@ -54,6 +55,7 @@ const Navigation = () => {
                 <li key={item.href}>
                   <Link href={item.href} className="flex items-center gap-2 text-black">
                     {item.label === 'Home' && <Home size={18} />}
+                    {item.label === 'About' && <User size={18} />}
                     {item.label === 'Projects' && <FolderGit2 size={18} />}
                     {item.label === 'Tech Stack' && <Code2 size={18} />}
                     {item.label === 'Contact' && <Mail size={18} />}
@@ -106,6 +108,7 @@ const Navigation = () => {
                     className="flex items-center justify-center gap-3 py-3 px-8 w-full text-black hover:bg-gray-100 rounded-lg"
                   >
                     {item.label === 'Home' && <Home size={20} />}
+                    {item.label === 'About' && <User size={18} />}
                     {item.label === 'Projects' && <FolderGit2 size={20} />}
                     {item.label === 'Tech Stack' && <Code2 size={20} />}
                     {item.label === 'Contact' && <Mail size={20} />}

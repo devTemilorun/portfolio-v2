@@ -25,6 +25,9 @@ const Footer = () => {
                         <Link href="/" className="hover:text-black transition-colors duration-200 hover:underline underline-offset-4">
                             Home
                         </Link>
+                        <Link href="/about" className="hover:text-black transition-colors duration-200 hover:underline underline-offset-4">
+                            About
+                        </Link>
                         <Link href="/#projects" className="hover:text-black transition-colors duration-200 hover:underline underline-offset-4">
                             Projects
                         </Link>
