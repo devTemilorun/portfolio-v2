@@ -1,7 +1,21 @@
+// Navigation Icon Import
 import menu_icon from './menu_icon.svg'
 import close_icon from './close_icon.svg'
 
 
+// About Image Import 
+import devTemilorun_image from './temilorun.jpeg';
+
+
+export const assets = {
+  menu_icon,
+  close_icon,
+  devTemilorun_image
+}
+
+
+
+// TechStack Icon Imports 
 import { 
   FaReact, 
   FaJs, 
@@ -42,51 +56,6 @@ import {
 import { VscCode } from "react-icons/vsc";
 import { Sparkles } from 'lucide-react'; 
 
-
-
-
-export const assets = {
-  menu_icon,
-  close_icon,
-}
-
-export const projects = [
-  {
-    title: "Strands That Perfectly Complement You!",
-    status: "IN PROCESS",
-    tags: ["React", "Tailwind", "Node.js"]
-  },
-  {
-    title: "Yvonne Kafor Coaching",
-    status: "FEATURED",
-    description: "Experienced & Compassionate Mediator, Divorce & Custody Coach",
-    tags: ["JavaScript", "Express.js", "React", "Node.js", "CSS"]
-  },
-  {
-    title: "Confessio",
-    status: "FEATURED",
-    tagline: "Speak without fear.",
-    tags: ["HTML", "Tailwind", "PostgreSQL", "Express.js", "Socket.io"]
-  },
-  {
-    title: "Axelerate",
-    status: "FEATURED",
-    tagline: "DATA-DRIVEN SCALE HUMAN-DRIVEN DESIRE",
-    tags: ["Next.js", "TypeScript", "Tailwind"]
-  },
-  {
-    title: "LinguaCore AI",
-    status: "Live",
-    tagline: "Global Intent. Local Voices.",
-    tags: ["AI", "Python", "React Native"]
-  },
-  {
-    title: "Xtensionvrsse",
-    status: "Live",
-    tagline: "Global Intent. Local Voices.",
-    tags: ["Next.js", "GraphQL", "PostgreSQL"]
-  }
-];
 
 export const techStacks = {
   Frontend: [
@@ -138,3 +107,46 @@ export const techStacks = {
     { name: "Webpack", icon: SiWebpack, color: "#8DD6F9" }
   ]
 };
+
+
+
+
+// Project Data
+export const projects = [
+  {
+    title: "Strands That Perfectly Complement You!",
+    status: "IN PROCESS",
+    tags: ["React", "Tailwind", "Node.js"]
+  },
+  {
+    title: "Yvonne Kafor Coaching",
+    status: "FEATURED",
+    description: "Experienced & Compassionate Mediator, Divorce & Custody Coach",
+    tags: ["JavaScript", "Express.js", "React", "Node.js", "CSS"]
+  },
+  {
+    title: "Confessio",
+    status: "FEATURED",
+    tagline: "Speak without fear.",
+    tags: ["HTML", "Tailwind", "PostgreSQL", "Express.js", "Socket.io"]
+  },
+  {
+    title: "Axelerate",
+    status: "FEATURED",
+    tagline: "DATA-DRIVEN SCALE HUMAN-DRIVEN DESIRE",
+    tags: ["Next.js", "TypeScript", "Tailwind"]
+  },
+  {
+    title: "LinguaCore AI",
+    status: "Live",
+    tagline: "Global Intent. Local Voices.",
+    tags: ["AI", "Python", "React Native"]
+  },
+  {
+    title: "Xtensionvrsse",
+    status: "Live",
+    tagline: "Global Intent. Local Voices.",
+    tags: ["Next.js", "GraphQL", "PostgreSQL"]
+  }
+];
+
