@@ -1,10 +1,14 @@
 import Navigation from "@/scenes/Navigation"
+import Hero from "@/scenes/Hero"
 
 
 const HomePage = () => {
   return (
     <>
-    <Navigation/>
+      <Navigation/>
+      <main>
+        <Hero />
+      </main>
     </>
   )
 }
