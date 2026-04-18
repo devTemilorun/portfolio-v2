@@ -1,6 +1,7 @@
 import Navigation from "@/scenes/Navigation"
 import Hero from "@/scenes/Hero"
 import Project from "@/scenes/Project"
+import TechStack from "@/scenes/TechStack"
 
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
       <main>
         <Hero />
         <Project/>
+        <TechStack/>
       </main>
     </>
   )
